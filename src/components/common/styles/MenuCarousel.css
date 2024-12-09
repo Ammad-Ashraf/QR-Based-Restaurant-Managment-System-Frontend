@@ -1,0 +1,49 @@
+.menu-carousel .carousel .control-arrow {
+  background: rgba(0,0,0,0.2);
+  height: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  opacity: 1;
+}
+
+.menu-carousel .carousel .control-prev.control-arrow {
+  left: -5px;
+}
+
+.menu-carousel .carousel .control-next.control-arrow {
+  right: -5px;
+}
+
+.menu-carousel .carousel .control-arrow:hover {
+  background: rgba(0,0,0,0.4);
+}
+
+.menu-carousel .carousel .control-arrow:before {
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+
+.menu-carousel .carousel .control-prev.control-arrow:before {
+  border-right: 12px solid #fff;
+}
+
+.menu-carousel .carousel .control-next.control-arrow:before {
+  border-left: 12px solid #fff;
+}
+
+.menu-carousel .carousel .slider-wrapper {
+  overflow: visible;
+}
+
+.menu-item {
+  transition: transform 0.3s ease;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
