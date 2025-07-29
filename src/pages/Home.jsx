@@ -18,17 +18,17 @@ function Home() {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
-              image: '/src/assests/Screenshot 2024-12-07 183959.png',
+              image: '/assests/Screenshot 2024-12-07 183959.png',
               title: 'Delivering cheezy khushiyan',
              
             },
             {
-              image: '/src/assests/Screenshot 2024-12-07 184012.png',
+              image: '/assests/Screenshot 2024-12-07 184012.png',
               title: 'Fastest Growing Brand of the Year',
               
             },
             {
-              image: '/src/assests/Screenshot 2024-12-07 184024.png',
+              image: '/assests/Screenshot 2024-12-07 184024.png',
               title: 'Made with fresh, local ingredients and love',
               
             },

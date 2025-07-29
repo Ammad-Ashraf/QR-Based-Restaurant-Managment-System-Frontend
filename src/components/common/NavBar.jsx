@@ -14,7 +14,7 @@ function Navbar() {
           <div className="flex items-center">
             <Link to="/home" className="flex items-center">
               <img
-                src="/src/assests/mainLogo.webp" 
+                src="/assests/mainLogo.webp" 
                 alt="Logo"
                 className="h-8 w-30 mr-2"
               />

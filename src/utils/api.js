@@ -1,7 +1,16 @@
 import axios from 'axios';
 
+// Hardcoded fallback for production
+const PRODUCTION_API = 'https://restaurant-api-i70b.onrender.com/api';
+
+// If env variable is set (e.g., in Vercel), use that. Otherwise, fallback.
+const API_URL = import.meta.env.VITE_API_URL || PRODUCTION_API;
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3000/api',
+  baseURL: API_URL,
+  headers: {
+    'Content-Type': 'application/json',
+  },
 });
 
 export const fetchMenuItems = async (categoryId = null) => {
