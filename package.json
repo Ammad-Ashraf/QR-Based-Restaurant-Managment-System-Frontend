@@ -13,6 +13,7 @@
     "@heroicons/react": "^2.1.1",
     "autoprefixer": "^10.4.16",
     "axios": "^1.6.3",
+    "framer-motion": "^12.23.12",
     "lucide-react": "^0.468.0",
     "postcss": "^8.4.32",
     "qrcode.react": "^4.1.0",

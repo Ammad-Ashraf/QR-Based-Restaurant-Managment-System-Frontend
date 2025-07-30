@@ -1,9 +1,9 @@
 import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import styles
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const ImageCarousel = () => {
   return (
-    <div className="relative overflow-hidden">
+    <div className="w-full max-w-screen-4xl mx-auto px-2 py-2">
       <Carousel
         autoPlay
         infiniteLoop
@@ -11,23 +11,23 @@ const ImageCarousel = () => {
         showStatus={false}
         interval={4000}
         transitionTime={800}
-        className="h-[500px]"
+        className="rounded-2xl overflow-hidden"
       >
-        <div>
-          <img src="/assests/Screenshot 2024-12-07 155932.jpg" alt="Restaurant 1" />
-        </div>
-        <div>
-          <img src="/assests/Screenshot 2024-12-07 155944.jpg" alt="Restaurant 2" />
-        </div>
-        <div>
-          <img src="/assests/Screenshot 2024-12-07 155959.jpg" alt="Restaurant 3" />
-        </div>
-        <div>
-          <img src="/assests/Screenshot 2024-12-07 162425.jpg" alt="Restaurant 4" />
-        </div>
-        <div>
-          <img src="/assests/Screenshot 2024-12-07 162452.jpg" alt="Restaurant 5" />
-        </div>
+        {[
+          "Screenshot 2024-12-07 155932.jpg",
+          "Screenshot 2024-12-07 155944.jpg",
+          "Screenshot 2024-12-07 155959.jpg",
+          "Screenshot 2024-12-07 162425.jpg",
+          "Screenshot 2024-12-07 162452.jpg",
+        ].map((img, index) => (
+          <div key={index}>
+            <img
+              src={`/assests/${img}`} // Make sure 'assets' is spelled correctly
+              alt={`Restaurant ${index + 1}`}
+              className="w-full h-[200px] sm:h-[250px] md:h-[450px] lg:h-[520px] object-cover"
+            />
+          </div>
+        ))}
       </Carousel>
     </div>
   );

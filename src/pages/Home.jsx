@@ -6,49 +6,51 @@ import FAQs from '../components/common/FAQs.jsx';
 function Home() {
   return (
     <div className="font-sans text-gray-800 bg-white">
-
-      <div className="relative">
-        <ImageCarousel />
-      </div>
-      <div className="relative">
-        <MenuCarousel />
-      </div>
-      {/* About Us Section */}
-      <div className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-            {
-              image: '/assests/Screenshot 2024-12-07 183959.png',
-              title: 'Delivering cheezy khushiyan',
-             
-            },
-            {
-              image: '/assests/Screenshot 2024-12-07 184012.png',
-              title: 'Fastest Growing Brand of the Year',
-              
-            },
-            {
-              image: '/assests/Screenshot 2024-12-07 184024.png',
-              title: 'Made with fresh, local ingredients and love',
-              
-            },
-          ].map((item, index) => (
-            <div>
-              <div key={index} className="bg-white rounded-lg overflow-hidden">
-              <img src={item.image} alt={item.title} className="w-full h-90 object-cover" />
+      <ImageCarousel />
+      <MenuCarousel />
+      <section className="bg-white py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                image: '/assests/Screenshot 2024-12-07 183959.png',
+                title: 'Delivering cheezy khushiyan',
+              },
+              {
+                image: '/assests/Screenshot 2024-12-07 184012.png',
+                title: 'Fastest Growing Brand of the Year',
+              },
+              {
+                image: '/assests/Screenshot 2024-12-07 184024.png',
+                title: 'Made with fresh, local ingredients and love',
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="flex flex-col bg-white rounded-xl overflow-hidden"
+              >
+                <div className="w-full h-60 sm:h-60 md:h-64 lg:h-72 overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="flex-1 p-4 flex items-center justify-center">
+                  <h3 className="text-center text-base sm:text-lg md:text-xl font-semibold text-black">
+                    {item.title}
+                  </h3>
+                </div>
               </div>
-              <div className="p-6">
-              <h3 className="text-2xl font-semibold text-black mb-2 ">{item.title}</h3>
-              
-              </div>
-            </div>
-            
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-      <FAQs/>
+      </section>
+
+      {/* FAQs */}
+      <FAQs />
     </div>
   );
 }
-export default Home; 
 
+export default Home;
