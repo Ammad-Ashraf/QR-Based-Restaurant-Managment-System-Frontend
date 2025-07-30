@@ -75,7 +75,7 @@ function Checkout()
               name="address"
               value={formData.address}
               onChange={handleChange}
-              placeholder="Enter your delivery address"
+              placeholder="Enter your address"
               required
               className="w-full mt-2 p-3 border border-gray-300 rounded-md focus:ring-1 focus:ring-yellow-400 focus:outline-none"
             />

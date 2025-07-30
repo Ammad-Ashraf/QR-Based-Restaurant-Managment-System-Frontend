@@ -41,7 +41,7 @@ function Navbar() {
               <FaShoppingCart />
               <span>Cart</span>
               {itemCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
+                <span className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
                   {itemCount}
                 </span>
               )}
@@ -76,7 +76,7 @@ function Navbar() {
                   <FaShoppingCart />
                   <span>Cart</span>
                   {itemCount > 0 && (
-                    <span className="absolute -top-2 -right-4 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
+                    <span className="absolute right-2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
                       {itemCount}
                     </span>
                   )}

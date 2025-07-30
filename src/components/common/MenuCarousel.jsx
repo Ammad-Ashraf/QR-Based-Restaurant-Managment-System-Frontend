@@ -5,8 +5,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const menuItems = [
   { title: 'BHOOK KA THE END!', image: '/assests/Screenshot 2024-12-07 172246.png' },
-  { title: 'STARTERS', image: '/assests/Screenshot 2024-12-07 172306.png' },
-  { title: 'SOMEWHAT LOCAL', image: '/assests/Screenshot 2024-12-07 172325.png' },
   { title: 'SOMEWHAT SOOPER', image: '/assests/Screenshot 2024-12-07 182607.png' },
   { title: 'SANDWICHES & PLATTERS', image: '/assests/Screenshot 2024-12-07 182618.png' }
 ];

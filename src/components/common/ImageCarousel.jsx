@@ -3,7 +3,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const ImageCarousel = () => {
   return (
-    <div className="w-full max-w-screen-4xl mx-auto px-2 py-2">
+    <div className="w-full h-full max-w-screen-xl mx-auto px-2 py-2">
       <Carousel
         autoPlay
         infiniteLoop
@@ -24,7 +24,7 @@ const ImageCarousel = () => {
             <img
               src={`/assests/${img}`} // Make sure 'assets' is spelled correctly
               alt={`Restaurant ${index + 1}`}
-              className="w-full h-[200px] sm:h-[250px] md:h-[450px] lg:h-[520px] object-cover"
+              className="w-full h-[140px] sm:h-[150px] md:h-[300px] lg:h-[400px] object-cover"
             />
           </div>
         ))}
