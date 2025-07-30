@@ -14,19 +14,19 @@ const ImageCarousel = () => {
         className="h-[500px]"
       >
         <div>
-          <img src="/assests/Screenshot 2024-12-07 155932.png" alt="Restaurant 1" />
+          <img src="/assests/Screenshot 2024-12-07 155932.jpg" alt="Restaurant 1" />
         </div>
         <div>
-          <img src="/assests/Screenshot 2024-12-07 155944.png" alt="Restaurant 2" />
+          <img src="/assests/Screenshot 2024-12-07 155944.jpg" alt="Restaurant 2" />
         </div>
         <div>
-          <img src="/assests/Screenshot 2024-12-07 155959.png" alt="Restaurant 3" />
+          <img src="/assests/Screenshot 2024-12-07 155959.jpg" alt="Restaurant 3" />
         </div>
         <div>
-          <img src="/assests/Screenshot 2024-12-07 162425.png" alt="Restaurant 4" />
+          <img src="/assests/Screenshot 2024-12-07 162425.jpg" alt="Restaurant 4" />
         </div>
         <div>
-          <img src="/assests/Screenshot 2024-12-07 162452.png" alt="Restaurant 5" />
+          <img src="/assests/Screenshot 2024-12-07 162452.jpg" alt="Restaurant 5" />
         </div>
       </Carousel>
     </div>
